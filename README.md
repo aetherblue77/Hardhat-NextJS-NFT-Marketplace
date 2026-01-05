@@ -52,7 +52,7 @@ cd hardhat-nft-marketplace
 yarn install
 ```
 
-Create a ```.env``` file in the root of ```hardhat-nft-marketplace``` and fill it with your keys:
+Create a `.env` file in the root of `hardhat-nft-marketplace` and fill it with your keys:
 
 ```bash
 SEPOLIA_RPC_URL=https://eth-sepolia.g.alchemy.com/v2/YOUR-API-KEY
@@ -74,7 +74,7 @@ cd ../graph-nft-marketplace
 yarn install
 ```
 
-Update ```subgraph.yaml``` and ```networks.json``` with your deployed contract address from Step 1. Then authenticate and deploy:
+Update `subgraph.yaml` and `networks.json` with your deployed contract address from Step 1. Then authenticate and deploy:
 
 ```bash
 # Replace with your actual Access Token from The Graph Dashboard
@@ -95,7 +95,7 @@ cd ../nextjs-nft-marketplace
 yarn install
 ```
 
-Ensure your ```constants/networkMapping.json``` and ABI files are updated with the latest deployment. Then run the development server:
+Ensure your `constants/networkMapping.json` and ABI files are updated with the latest deployment. Then run the development server:
 
 Bash
 
@@ -112,7 +112,7 @@ Open http://localhost:3000 in your browser.
 Contributions are welcome! Please feel free to submit a Pull Request.
 
 1. Fork the project
-2. Create your Feature Branch (```git checkout -b feature/AmazingFeature``)
-3. Commit your Changes (```git commit -m 'Add some AmazingFeature'``)
-4. Push to the Branch (```git push origin feature/AmazingFeature```)
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request

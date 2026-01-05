@@ -1,50 +1,25 @@
-1. Home Page:
-    1. Show recently listed NFTs
-        1. If you own the NFT, you can update the listing
-        2. If not, you can buy the listing
-2. Sell Page:
-    1. You can list your NFT on the marketplace
+# 💻 Reactive Frontend Interface
 
+This directory contains the **User Interface** built with Next.js. It is designed to abstract the complexity of blockchain interactions, providing a Web2-like experience on a Web3 infrastructure.
 
+## 🏗️ Architectural Decisions
 
+### 1. Hybrid Data Fetching
+The application uses a hybrid approach to manage data:
+* **Writes (Transactions):** Uses `Moralis` and `Web3UIKit` to communicate directly with the Smart Contract via MetaMask (e.g., `list`, `buy`, `cancel`).
+* **Reads (Display):** Uses `Apollo Client` to fetch data from **The Graph**. This decouples the "reading" process from the blockchain, ensuring the UI remains fast and responsive even if the network is congested.
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+### 2. Client-Side IPFS Resolution
+The NFT images and metadata are stored on IPFS (InterPlanetary File System). The frontend acts as a resolver:
+1.  It queries the Smart Contract for the `tokenURI`.
+2.  It fetches the metadata JSON from the IPFS Gateway.
+3.  It renders the image directly to the user.
 
-## Getting Started
+### 3. Asynchronous State Management
+Blockchain transactions are not instant. The UI implements robust notification systems to handle the "Mining Gap":
+* **Optimistic Updates / Notifications:** Users receive immediate feedback when a transaction is signed.
+* **Eventual Consistency:** The UI reflects the understanding that data from The Graph may have a slight delay (latency) compared to the real-time blockchain state.
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+## 🧩 Key Components
+* **`NFTBox.js`**: A self-contained component that handles individual NFT logic (rendering image, handling Buy/Update/Cancel modals).
+* **`sell-nft.js`**: Manages the approval and listing workflow (Two-step transaction process: Approve -> List).
