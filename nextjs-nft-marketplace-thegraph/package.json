@@ -1,0 +1,36 @@
+{
+  "name": "nextjs-nft-marketplace-moralis",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.9.5",
+    "graphql": "^16.8.1",
+    "moralis": "1.8.0",
+    "moralis-v1": "^1.13.0",
+    "next": "12.3.4",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-moralis": "1.4.0",
+    "web3uikit": "0.1.159",
+    "magic-sdk": "^28.1.1",
+    "rxjs": "^7.8.2"
+  },
+  "resolutions": {
+    "react-moralis": "1.4.0",
+    "web3uikit": "0.1.159"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.23",
+    "dotenv": "^17.2.3",
+    "eslint": "8.57.0",
+    "eslint-config-next": "12.3.4",
+    "postcss": "^8.5.6",
+    "tailwindcss": "3.4.1"
+  }
+}

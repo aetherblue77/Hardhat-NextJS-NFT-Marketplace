@@ -1,0 +1,107 @@
+yarn run v1.22.22
+$ next build
+info  - Loaded env from /home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/.env
+info  - Linting and checking validity of types...
+info  - Creating an optimized production build...
+warn  - Compiled with warnings
+
+./node_modules/moralis-v1/lib/browser/Web3Connector/MagicWeb3Connector.js
+Module not found: Can't resolve 'magic-sdk' in '/home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/moralis-v1/lib/browser/Web3Connector'
+
+Import trace for requested module:
+./node_modules/moralis-v1/lib/browser/Web3Connector/MagicWeb3Connector.js
+./node_modules/moralis-v1/lib/browser/MoralisWeb3.js
+./node_modules/moralis-v1/lib/browser/Parse.js
+./node_modules/moralis-v1/index.js
+./node_modules/react-moralis/lib/index.esm.js
+
+./node_modules/moralis-v1/lib/browser/Web3Connector/WalletConnectWeb3Connector.js
+Module not found: Can't resolve '@walletconnect/ethereum-provider' in '/home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/moralis-v1/lib/browser/Web3Connector'
+
+Import trace for requested module:
+./node_modules/moralis-v1/lib/browser/Web3Connector/WalletConnectWeb3Connector.js
+./node_modules/moralis-v1/lib/browser/MoralisWeb3.js
+./node_modules/moralis-v1/lib/browser/Parse.js
+./node_modules/moralis-v1/index.js
+./node_modules/react-moralis/lib/index.esm.js
+
+./pages/_app.js
+Attempted import error: 'ApolloProvider' is not exported from '@apollo/client' (imported as 'ApolloProvider').
+
+./pages/graphExample.js
+Attempted import error: 'useQuery' is not exported from '@apollo/client' (imported as 'useQuery').
+
+info  - Collecting page data...
+info  - Generating static pages (0/5)
+
+Error occurred prerendering page "/sell-nft". Read more: https://nextjs.org/docs/messages/prerender-error
+Error: Minified React error #130; visit https://reactjs.org/docs/error-decoder.html?invariant=130&args[]=undefined&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at b.render (/home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/react-dom/cjs/react-dom-server.node.production.min.js:45:32)
+    at b.read (/home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/react-dom/cjs/react-dom-server.node.production.min.js:41:83)
+    at exports.renderToString (/home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/react-dom/cjs/react-dom-server.node.production.min.js:52:138)
+    at renderDocument (/home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/next/dist/server/render.js:736:47)
+    at renderToHTML (/home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/next/dist/server/render.js:819:34)
+    at async /home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/next/dist/export/worker.js:304:36
+    at async Span.traceAsyncFn (/home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/next/dist/trace/trace.js:79:20)
+info  - Generating static pages (1/5)
+
+Error occurred prerendering page "/graphExample". Read more: https://nextjs.org/docs/messages/prerender-error
+Error: Minified React error #130; visit https://reactjs.org/docs/error-decoder.html?invariant=130&args[]=undefined&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at b.render (/home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/react-dom/cjs/react-dom-server.node.production.min.js:45:32)
+    at b.read (/home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/react-dom/cjs/react-dom-server.node.production.min.js:41:83)
+    at exports.renderToString (/home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/react-dom/cjs/react-dom-server.node.production.min.js:52:138)
+    at renderDocument (/home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/next/dist/server/render.js:736:47)
+    at renderToHTML (/home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/next/dist/server/render.js:819:34)
+    at async /home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/next/dist/export/worker.js:304:36
+    at async Span.traceAsyncFn (/home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/next/dist/trace/trace.js:79:20)
+info  - Generating static pages (2/5)
+
+Error occurred prerendering page "/404". Read more: https://nextjs.org/docs/messages/prerender-error
+Error: Minified React error #130; visit https://reactjs.org/docs/error-decoder.html?invariant=130&args[]=undefined&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at b.render (/home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/react-dom/cjs/react-dom-server.node.production.min.js:45:32)
+    at b.read (/home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/react-dom/cjs/react-dom-server.node.production.min.js:41:83)
+    at exports.renderToString (/home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/react-dom/cjs/react-dom-server.node.production.min.js:52:138)
+    at renderDocument (/home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/next/dist/server/render.js:736:47)
+    at renderToHTML (/home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/next/dist/server/render.js:819:34)
+    at async /home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/next/dist/export/worker.js:304:36
+    at async Span.traceAsyncFn (/home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/next/dist/trace/trace.js:79:20)
+info  - Generating static pages (3/5)
+
+Error occurred prerendering page "/". Read more: https://nextjs.org/docs/messages/prerender-error
+Error: Minified React error #130; visit https://reactjs.org/docs/error-decoder.html?invariant=130&args[]=undefined&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at b.render (/home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/react-dom/cjs/react-dom-server.node.production.min.js:45:32)
+    at b.read (/home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/react-dom/cjs/react-dom-server.node.production.min.js:41:83)
+    at exports.renderToString (/home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/react-dom/cjs/react-dom-server.node.production.min.js:52:138)
+    at renderDocument (/home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/next/dist/server/render.js:736:47)
+    at renderToHTML (/home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/next/dist/server/render.js:819:34)
+    at async /home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/next/dist/export/worker.js:304:36
+    at async Span.traceAsyncFn (/home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/next/dist/trace/trace.js:79:20)
+
+Error occurred prerendering page "/500". Read more: https://nextjs.org/docs/messages/prerender-error
+Error: Minified React error #130; visit https://reactjs.org/docs/error-decoder.html?invariant=130&args[]=undefined&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at b.render (/home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/react-dom/cjs/react-dom-server.node.production.min.js:45:32)
+    at b.read (/home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/react-dom/cjs/react-dom-server.node.production.min.js:41:83)
+    at exports.renderToString (/home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/react-dom/cjs/react-dom-server.node.production.min.js:52:138)
+    at renderDocument (/home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/next/dist/server/render.js:736:47)
+    at renderToHTML (/home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/next/dist/server/render.js:819:34)
+    at async /home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/next/dist/export/worker.js:304:36
+    at async Span.traceAsyncFn (/home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/next/dist/trace/trace.js:79:20)
+info  - Generating static pages (5/5)
+
+> Build error occurred
+Error: Export encountered errors on following paths:
+	/
+	/_error: /404
+	/_error: /500
+	/graphExample
+	/sell-nft
+    at /home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/next/dist/export/index.js:404:19
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Span.traceAsyncFn (/home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/next/dist/trace/trace.js:79:20)
+    at async /home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/next/dist/build/index.js:1230:21
+    at async Span.traceAsyncFn (/home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/next/dist/trace/trace.js:79:20)
+    at async /home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/next/dist/build/index.js:1092:17
+    at async Span.traceAsyncFn (/home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/next/dist/trace/trace.js:79:20)
+    at async Object.build [as default] (/home/jonathan/hardhat-advanced/nextjs-nft-marketplace/nextjs-nft-marketplace-thegraph/node_modules/next/dist/build/index.js:65:29)
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
